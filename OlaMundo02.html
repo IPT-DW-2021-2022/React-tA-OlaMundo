@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>O meu primeiro ficheiro em REACT</title>
+    <!-- 
+        https://github.com/facebook/react/releases
+        https://babeljs.io/docs/en/
+        -->
+    <script src="https://unpkg.com/react@^18.1.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+
+<body>
+    <div id="root">
+        <!-- nesta DIV vai aparecer o conteúdo da nossa aplicação
+             Se ela contiver alguma coisa, o seu conteúdo será totalmente eliminado
+        -->
+    </div>
+
+    <script type="text/babel">
+        // Criar um COMPONENTE para adicionar mais funcionalidades
+        class App extends React.Component {
+            render() {
+                return <div>
+                    <h1>Olá Mundo</h1>
+                    <p>Primeira lição: O <i>REACT</i> só manipula UM objeto.</p>
+                    <p>Segunda lição: Este exemplo é útil para ilustrar como adicionar
+                         <i>REACT</i> a uma aplicação já existente.
+                        </p>
+                </div>
+            }
+        }
+
+        ReactDOM.render(
+            <App />
+            ,
+            document.getElementById('root')
+        )
+    </script>
+</body>
+
+</html>
